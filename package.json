@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "serve": "live-server public/",
-    "build": "webpack --mode production",
+    "build": "webpack -p --env production",
     "dev-server": "webpack-dev-server --mode development",
     "test": "jest --config=jest.config.json"
   },
@@ -45,6 +45,7 @@
     "webpack-dev-server": "^3.1.4"
   },
   "devDependencies": {
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "webpack-cli": "^3.0.8"
   }
 }
